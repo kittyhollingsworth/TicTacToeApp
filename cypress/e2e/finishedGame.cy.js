@@ -3,7 +3,7 @@ describe('Scenarios a player can experience finishing a game', () => {
 
   it('Both Players Tie', () => {
     cy.visit('/')
-    cy.CreateBoard(3);
+    // cy.CreateBoard(3);
     ticTacToeElements.getInputTextbox().type('3');
     ticTacToeElements.getPlayButton().click();
     ticTacToeElements.getGridCell('0').click();//X
